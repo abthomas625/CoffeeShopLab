@@ -1,0 +1,14 @@
+﻿@model IEnumerable<Product>
+
+<form asp-action="DisplayDescription" asp-controller="Product">
+    <p>Select which menu item you'd like to view:'</p>
+    <select name="Product">
+
+    @foreach(Product p in Model){
+        <option value="p.ProductName">
+            @p.ProductName
+        </option>
+    }
+    </select>
+    <input type="submit"
+</form>

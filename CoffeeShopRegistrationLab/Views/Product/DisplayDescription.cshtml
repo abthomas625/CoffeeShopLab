@@ -1,0 +1,10 @@
+﻿@model IEnumerable<Product>
+
+
+@foreach(Product m in Model)
+{
+    <p>Product: @m.ProductName</p>
+    <p>Price: @m.Price</p>
+    <p>Description: @m.Description</p>
+    <p>Category: @m.Category</p>
+}
